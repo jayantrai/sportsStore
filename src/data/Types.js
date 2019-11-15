@@ -10,3 +10,7 @@ export const ActionTypes = {
     CART_REMOVE: "cart_delete",
     CART_CLEAR: "cart_clear"
 }
+
+// actions are objects that are sent to the data store to make changes to the 
+// data it contains. THey have types and action objects are created using 
+// action creators
