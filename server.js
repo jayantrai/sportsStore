@@ -1,4 +1,3 @@
-// to host the backend server
 const express = require("express");
 // to provide a restful web service
 const jsonServer = require("json-server");
