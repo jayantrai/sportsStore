@@ -12,6 +12,8 @@ export const ShopReducer = (storeData, action) => {
     }
 }
 
+
+// fifth
 // actions are processed by data store reducers 
 // they receive current contents of the data store and an action 
 // object and use them to make changes 

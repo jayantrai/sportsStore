@@ -26,3 +26,6 @@ module.exports = function () {
         orders: []
     }
 }
+// start
+// data collections to be used by the application 
+// orders collection contains the orders that customers have placed

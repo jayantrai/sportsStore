@@ -13,3 +13,6 @@ export const data = {
            description: "P6 (Chess)", price: 7 },                        
     ]
 }
+
+// second
+// local data store that uses local placeholder data
