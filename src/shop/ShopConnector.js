@@ -5,7 +5,7 @@ import { loadData } from '../data/ActionCreators'
 import { DataTypes } from '../data/Types'
 import  Shop  from './Shop'
 import { addToCart, updateCartQuantity, removeFromCart, clearCart } from '../data/CartActionCreators.js'
-
+import { CartDetails } from './CartDetails'
 // As the first argument passed in to connect, 
 // mapStateToProps is used for selecting the part of the data from the store 
 // that the connected component needs. It’s frequently referred to as just mapState for short.
@@ -43,6 +43,9 @@ import { addToCart, updateCartQuantity, removeFromCart, clearCart } from '../dat
                                     <Shop {...this.props } {...routeProps}
                                     products={filterProducts(this.props.products,
                                     routeProps.match.params.category)} />} />
+
+                            <Route path="/shop/cart" render={(routeProps) => 
+                                <CartDetails {...this.props } {...routeProps} />} />
                                 <Redirect to="/shop/products" />
                         </Switch>
                     }
