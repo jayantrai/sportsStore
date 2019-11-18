@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import  CategoryNavigation  from './CategoryNavigation.js'
+import  ProductList from './ProductList.js'
 
 class Shop extends Component {
   render() {
@@ -13,7 +15,11 @@ class Shop extends Component {
         </div>
         <div className="row">
             <div className="col-3 p-2">
-                
+                <CategoryNavigation baseUrl="/shop/products"
+                    categories={this.props.categories} />
+            </div>
+            <div className="col-9 p-2">
+                <ProductList products={this.props.products} />
             </div>
         </div>
         
@@ -23,3 +29,7 @@ class Shop extends Component {
 }
 
 export default Shop
+
+// grid structure 
+// this component is the parent component 
+// child components receive data by providing props
