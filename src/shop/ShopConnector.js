@@ -4,6 +4,7 @@ import { connect } from 'react-redux'
 import { loadData } from '../data/ActionCreators'
 import { DataTypes } from '../data/Types'
 import  Shop  from './Shop'
+import { addToCart, updateCartQuantity, removeFromCart, clearCart } from '../data/CartActionCreators.js'
 
 // As the first argument passed in to connect, 
 // mapStateToProps is used for selecting the part of the data from the store 
@@ -22,7 +23,7 @@ import  Shop  from './Shop'
 // This is the only way to trigger a state change.
 
     const mapDispatchToProps = {
-        loadData
+        loadData, addToCart, updateCartQuantity, removeFromCart, clearCart
     }
 
     const filterProducts = (products = [], category ) => (
