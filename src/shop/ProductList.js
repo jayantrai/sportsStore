@@ -5,6 +5,9 @@ class ProductList extends Component {
       if (this.props.products == null || this.props.products.length === 0) {
         return <h5 className="p-2">No Products</h5>
       }
+
+      // maps products to be displayed as badge
+    
     return this.props.products.map(p => 
       <div className="card m-1 p-1 bg-light" key={p.id}>
         <h4>

@@ -34,7 +34,9 @@ import  Shop  from './Shop'
         class extends Component {
             render() {
                 return <Switch>
-                            {/* passing render props to shop component with an inline function */}
+                            {/* passing render props to shop component with an inline function 
+                            matches params based on category link
+                            */}
                             <Route path='/shop/products/:category?'
                                 render={ (routeProps) =>
                                     <Shop {...this.props } {...routeProps}
@@ -43,6 +45,7 @@ import  Shop  from './Shop'
                                 <Redirect to="/shop/products" />
                         </Switch>
                     }
+
 
         componentDidMount() {
           this.props.loadData(DataTypes.CATEGORIES)

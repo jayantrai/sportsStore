@@ -9,6 +9,8 @@ class CategoryNavigation extends Component {
         All
         </Link>
 
+        {/* maps categories to be displayed  */}
+
         { this.props.categories && this.props.categories.map(cat =>
         <Link className="btn btn-secondary btn-block" key={ cat }
         to={ `${this.props.baseUrl}/ ${cat.toLowerCase()}`}>
