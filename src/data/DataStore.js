@@ -4,8 +4,8 @@ import { CartReducer } from './CartReducer'
 import { CommonReducer } from './CommonReducer'
 import { asyncActions } from './AsyncMiddleware'
 
-export const SportsStoreDataStore 
-= createStore(CommonReducer(ShopReducer, CartReducer), 
+export const SportsStoreDataStore
+= createStore(CommonReducer(ShopReducer, CartReducer),
 applyMiddleware(asyncActions))
 
 // final step for creating the data store 

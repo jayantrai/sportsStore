@@ -6,8 +6,8 @@ export class CartSummary extends Component {
     getSummary = () => {
         if (this.props.cartItems > 0 ) {
             return <span>
-                { this.props.cartItems } items(s),
-                ${ this.props.cartPrice.toFixed(2)}
+            { this.props.cartItems } items(s)
+            ${ this.props.cartPrice.toFixed(2)}
             </span>
         } else {
             return <span>Your cart: (empty)</span>
@@ -24,8 +24,7 @@ export class CartSummary extends Component {
         return <div className="float-right">
             <small>
                 {this.getSummary()}
-                <Link className={this.getLinkClasses()}
-                    to="/shop/cart">
+                <Link className={this.getLinkClasses()} to="/shop/cart">
                     <i className="fa fa-shopping-cart"></i>
                 </Link>
             </small>

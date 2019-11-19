@@ -28,8 +28,7 @@ import { CartDetails } from './CartDetails'
 
     const filterProducts = (products = [], category ) => (
         !category || category === "All"
-    ) ? products
-    : products.filter(p => p.category.toLowerCase() === category.toLowerCase())
+    ) ? products : products.filter(p => p.category.toLowerCase() === category.toLowerCase())
 
     export const ShopConnector = connect(mapStateToProps, mapDispatchToProps) (
         class extends Component {

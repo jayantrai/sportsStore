@@ -8,12 +8,12 @@ class ProductList extends Component {
 
       // maps products to be displayed as badge
     
-    return this.props.products.map(p => 
-      <div className="card m-1 p-1 bg-light" key={p.id}>
+    return this.props.products.map(p =>
+    <div className="card m-1 p-1 bg-light" key={p.id}>
         <h4>
           {p.name}
             <span className="badge badge-pill badge-primary float-right">
-              ${p.price.toFixed(2)}
+            ${p.price.toFixed(2)}
             </span>
         </h4>
 
